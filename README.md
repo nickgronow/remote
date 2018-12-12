@@ -18,7 +18,7 @@ rp
 * `lp` - Load profile - Pull the latest changes of this repo into the server
 * `rp` - Reload profile
 * `ep` - Edit profile
-*
+
 ## Editor and mode
 
 These scripts have bias towards the vim editor and vi mode.
