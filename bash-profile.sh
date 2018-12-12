@@ -7,26 +7,29 @@ export LESSOPEN='|~/.lessfilter %s'
 
 # Bash profile
 alias ep="vim ~/.bash_stuff"
-alias rp=". /home/nick/.bash_profile"
+alias rp=". ~/.bash_profile"
 function lp {
   echo 'Getting .bash_profile...'
-  curl -o ~/.bash_profile -L https://github.com/nickgronow/dotfiles/blob/master/scripts/remote/bash-profile.sh
+  curl -o ~/.bash_profile -L https://raw.githubusercontent.com/nickgronow/remote/master/bash-profile.sh
   echo 'Getting .psqlrc...'
-  curl -o ~/.psqlrc -L https://github.com/nickgronow/dotfiles/blob/master/scripts/remote/psqlrc
+  curl -o ~/.psqlrc -L https://raw.githubusercontent.com/nickgronow/remote/master/psqlrc
   echo 'Getting .vimrc...'
-  curl -o ~/.vimrc -L https://github.com/nickgronow/dotfiles/blob/master/scripts/remote/vimrc
+  curl -o ~/.vimrc -L https://raw.githubusercontent.com/nickgronow/remote/master/vimrc
   echo 'Getting .lessfilter...'
-  curl -o ~/.lessfilter -L https://github.com/nickgronow/dotfiles/blob/master/scripts/remote/lessfilter
+  curl -o ~/.lessfilter -L https://raw.githubusercontent.com/nickgronow/remote/master/lessfilter
   echo 'Setting vi editing mode...'
   echo "set editing-mode vi" > ~/.inputrc
 }
 function lb {
-  curl -o ~/.bash_profile -L https://github.com/nickgronow/dotfiles/blob/master/scripts/remote/bash-profile.sh
+  curl -o ~/.bash_profile -L https://raw.githubusercontent.com/nickgronow/remote/master/bash-profile.sh
 }
 
 # LS
 alias ls="ls --color=auto"
 alias lsa="ls -alh"
+
+# Directory sizes
+alias dud="sudo du -h -d1 | sort -h | tac"
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
