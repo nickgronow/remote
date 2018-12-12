@@ -1,0 +1,12 @@
+\x auto
+\pset pager on
+\timing
+\set all 'select * from'
+\set count 'select count(*) from'
+\set name 'select id, name from'
+\set order 'order by id asc limit 30;'
+\set last 'order by id desc limit 1;'
+\set COMP_KEYWORD_CASE upper
+\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTSIZE 10000
+\pset null '(null)'
