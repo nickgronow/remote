@@ -7,7 +7,7 @@ These simple scripts make it easy to setup some basic commands on remote linux s
 Simply run:
 
 ```
-curl -o ~/.bash_profile -L https://github.com/nickgronow/remote/blob/master/scripts/remote/bash-profile.sh
+curl -o ~/.bash_profile -L https://raw.githubusercontent.com/nickgronow/remote/master/bash-profile.sh
 . ~/.bash_profile
 lp
 rp
