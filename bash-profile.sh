@@ -31,6 +31,10 @@ alias lsa="ls -alh"
 # Directory sizes
 alias dud="sudo du -h -d1 | sort -h | tac"
 
+# files
+
+alias recent="ls -t | head -1"
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
